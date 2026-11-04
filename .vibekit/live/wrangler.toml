@@ -1,0 +1,12 @@
+name = "sabi-business"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sabi-business-db"
+database_id = "PASTE_YOUR_D1_DATABASE_ID_HERE"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"

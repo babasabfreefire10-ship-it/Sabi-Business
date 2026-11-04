@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#080d0b">
+<title>SABI BUSINESS</title>
+<style>
+:root{--bg:#080d0b;--panel:#101a15;--panel2:#14221a;--line:#20372a;--green:#00e676;--green2:#8cffbd;--muted:#91a69a;--white:#f4fff7;--red:#ff6868}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#123321 0,transparent 34%),var(--bg);color:var(--white);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+button,input,select{font:inherit}button{cursor:pointer}.wrap{max-width:1100px;margin:auto;padding:22px 16px 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:34px}.brand{font-weight:900;letter-spacing:1.4px;font-size:20px}.brand span{color:var(--green)}.tag{color:var(--muted);font-size:11px;letter-spacing:2px;margin-top:3px}.lang{background:#101a15;border:1px solid var(--line);color:var(--white);border-radius:10px;padding:10px}
+.hero{padding:25px 0 30px}.eyebrow{color:var(--green2);font-size:12px;letter-spacing:2px;font-weight:800}.hero h1{font-size:clamp(32px,7vw,58px);line-height:1.03;margin:12px 0}.hero p{color:var(--muted);max-width:600px;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:linear-gradient(145deg,#14221a,#0d1511);border:1px solid var(--line);border-radius:18px;padding:18px}.card h3{margin:8px 0 5px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.ico{font-size:24px}.auth{max-width:480px;margin:15px auto;background:rgba(16,26,21,.96);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 20px 70px #0008}.auth h2{margin:0 0 8px}.sub{color:var(--muted);font-size:13px;line-height:1.5}.field{display:block;margin:14px 0}.field span{display:block;font-size:12px;color:#c2d4c8;margin-bottom:7px}.field input,.field select{width:100%;background:#08100b;border:1px solid #294333;color:white;border-radius:11px;padding:13px;outline:none}.field input:focus{border-color:var(--green)}.btn{border:0;border-radius:11px;background:var(--green);color:#041109;font-weight:850;padding:13px 17px;width:100%;margin-top:8px}.btn.secondary{background:#17261d;color:var(--green2);border:1px solid var(--line)}.btn.small{width:auto;margin:0;padding:9px 13px}.switch{background:none;border:0;color:var(--green2);padding:14px 0 0}.msg{font-size:13px;margin-top:12px;color:var(--red);min-height:18px}.hidden{display:none!important}.dashhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat{background:#101a15;border:1px solid var(--line);padding:16px;border-radius:15px}.stat strong{display:block;font-size:26px;color:var(--green)}.stat span{font-size:12px;color:var(--muted)}.tablewrap{overflow:auto}.table{width:100%;border-collapse:collapse;font-size:13px}.table th,.table td{text-align:left;padding:12px;border-bottom:1px solid var(--line);white-space:nowrap}.table th{color:var(--green2)}.pill{display:inline-block;background:#183b27;color:#8cffbd;padding:5px 9px;border-radius:20px;font-size:11px}.notice{border:1px solid #395b43;background:#102218;color:#c8f7d7;border-radius:12px;padding:13px;font-size:13px;line-height:1.5;margin-top:15px}.footer{color:#62766a;text-align:center;font-size:11px;margin-top:35px}@media(min-width:700px){.grid{grid-template-columns:repeat(4,1fr)}.auth{margin:10px auto 35px}.hero{padding-top:42px}}@media(max-width:420px){.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:span 2}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+ <div><div class="brand">SABI <span>BUSINESS</span></div><div class="tag">YOUR BUSINESS. ONE PLATFORM.</div></div>
+ <select id="lang" class="lang" aria-label="Language"><option value="sq">Shqip</option><option value="en">English</option><option value="it">Italiano</option><option value="de">Deutsch</option></select>
+</header>
+
+<section id="landing">
+ <div class="hero"><div class="eyebrow" data-i18n="eyebrow">PLATFORMA JOTE E BIZNESIT</div><h1 data-i18n="headline">Menaxho gjithçka.<br> Në një vend.</h1><p data-i18n="intro">Një panel i vetëm për restorante, dyqane dhe biznese. Fillo me llogarinë tënde dhe zgjeroje biznesin hap pas hapi.</p></div>
+ <div class="grid">
+  <article class="card"><div class="ico">🍽️</div><h3>Restaurant QR</h3><p data-i18n="restaurant">Menu digjitale dhe porosi nga telefoni.</p></article>
+  <article class="card"><div class="ico">🌐</div><h3>Website</h3><p data-i18n="website">Prani online për biznesin tënd.</p></article>
+  <article class="card"><div class="ico">🛍️</div><h3>Online Shop</h3><p data-i18n="shop">Produkte dhe shitje online.</p></article>
+  <article class="card"><div class="ico">👥</div><h3>CRM</h3><p data-i18n="crm">Klientë dhe kontakte në një vend.</p></article>
+ </div>
+ <div class="auth">
+  <div id="loginBox"><h2 data-i18n="welcome">Mirë se u ktheve</h2><p class="sub" data-i18n="loginSub">Hyr në panelin e SABI BUSINESS.</p>
+   <label class="field"><span>Email</span><input id="loginEmail" type="email" autocomplete="username" placeholder="name@example.com"></label>
+   <label class="field"><span data-i18n="password">Fjalëkalimi</span><input id="loginPassword" type="password" autocomplete="current-password" placeholder="••••••••"></label>
+   <button class="btn" id="loginBtn" data-i18n="login">Hyr në llogari</button>
+   <button class="switch" id="showRegister" data-i18n="createAccount">Nuk ke llogari? Regjistro biznesin</button>
+  </div>
+  <div id="registerBox" class="hidden"><h2 data-i18n="createTitle">Krijo llogarinë e biznesit</h2><p class="sub" data-i18n="registerSub">Regjistrimi është falas në këtë version.</p>
+   <label class="field"><span data-i18n="businessName">Emri i biznesit</span><input id="businessName" maxlength="100" placeholder="Bar / Restaurant"></label>
+   <label class="field"><span>Email</span><input id="registerEmail" type="email" autocomplete="email" placeholder="name@example.com"></label>
+   <label class="field"><span data-i18n="password">Fjalëkalimi</span><input id="registerPassword" type="password" autocomplete="new-password" placeholder="Minimum 8 karaktere"></label>
+   <button class="btn" id="registerBtn" data-i18n="register">Regjistro biznesin</button>
+   <button class="switch" id="showLogin" data-i18n="haveAccount">Ke llogari? Hyr këtu</button>
+  </div>
+  <div id="authMsg" class="msg"></div>
+ </div>
+</section>
+
+<section id="dashboard" class="hidden">
+ <div class="dashhead"><div><div class="eyebrow" data-i18n="controlPanel">PANELI I KONTROLLIT</div><h1 id="dashTitle" style="margin:7px 0 0">Dashboard</h1><div class="sub" id="dashSub"></div></div><button id="logoutBtn" class="btn secondary small" data-i18n="logout">Dil</button></div>
+ <div id="stats" class="stats"></div>
+ <div class="card" id="businessPanel">
+  <h3 data-i18n="businessProfile">Profili i biznesit</h3>
+  <label class="field"><span data-i18n="businessName">Emri i biznesit</span><input id="profileName" maxlength="100"></label>
+  <label class="field"><span data-i18n="language">Gjuha</span><select id="profileLanguage"><option value="sq">Shqip</option><option value="en">English</option><option value="it">Italiano</option><option value="de">Deutsch</option></select></label>
+  <button id="saveProfile" class="btn" data-i18n="save">Ruaj ndryshimet</button><div id="profileMsg" class="msg"></div>
+ </div>
+ <div class="card hidden" id="adminPanel"><h3 data-i18n="registeredBusinesses">Bizneset e regjistruara</h3><div class="tablewrap"><table class="table"><thead><tr><th>Email</th><th data-i18n="businessName">Biznesi</th><th data-i18n="created">Krijuar</th></tr></thead><tbody id="businessRows"></tbody></table></div></div>
+ <div class="notice" data-i18n="v1Notice">Ky është versioni 1: llogari, autentikim, panel biznesi dhe panel admin. Modulet QR, porositë dhe pagesat do të shtohen në versionet pasuese.</div>
+</section>
+<div class="footer">SABI BUSINESS · VERSION 1.0 · © <span id="year"></span></div>
+</div>
+<script>
+const T={
+sq:{eyebrow:"PLATFORMA JOTE E BIZNESIT",headline:"Menaxho gjithçka.<br> Në një vend.",intro:"Një panel i vetëm për restorante, dyqane dhe biznese. Fillo me llogarinë tënde dhe zgjeroje biznesin hap pas hapi.",restaurant:"Menu digjitale dhe porosi nga telefoni.",website:"Prani online për biznesin tënd.",shop:"Produkte dhe shitje online.",crm:"Klientë dhe kontakte në një vend.",welcome:"Mirë se u ktheve",loginSub:"Hyr në panelin e SABI BUSINESS.",password:"Fjalëkalimi",login:"Hyr në llogari",createAccount:"Nuk ke llogari? Regjistro biznesin",createTitle:"Krijo llogarinë e biznesit",registerSub:"Regjistrimi është falas në këtë version.",businessName:"Emri i biznesit",register:"Regjistro biznesin",haveAccount:"Ke llogari? Hyr këtu",controlPanel:"PANELI I KONTROLLIT",logout:"Dil",businessProfile:"Profili i biznesit",language:"Gjuha",save:"Ruaj ndryshimet",registeredBusinesses:"Bizneset e regjistruara",created:"Krijuar",v1Notice:"Ky është versioni 1: llogari, autentikim, panel biznesi dhe panel admin. Modulet QR, porositë dhe pagesat do të shtohen në versionet pasuese.",admin:"Super Admin",business:"Paneli i biznesit",businesses:"Biznese",users:"Përdorues",sessions:"Sesione aktive",welcomeBusiness:"Mirë se erdhe"},
+en:{eyebrow:"YOUR BUSINESS PLATFORM",headline:"Manage everything.<br> In one place.",intro:"One dashboard for restaurants, shops and businesses. Start with your account and grow step by step.",restaurant:"Digital menus and phone orders.",website:"An online presence for your business.",shop:"Products and online sales.",crm:"Customers and contacts in one place.",welcome:"Welcome back",loginSub:"Sign in to SABI BUSINESS.",password:"Password",login:"Sign in",createAccount:"No account? Register your business",createTitle:"Create your business account",registerSub:"Registration is free in this version.",businessName:"Business name",register:"Register business",haveAccount:"Already have an account? Sign in",controlPanel:"CONTROL PANEL",logout:"Log out",businessProfile:"Business profile",language:"Language",save:"Save changes",registeredBusinesses:"Registered businesses",created:"Created",v1Notice:"Version 1 includes accounts, authentication, business dashboard and admin dashboard. QR, orders and payments will be added in future versions.",admin:"Super Admin",business:"Business dashboard",businesses:"Businesses",users:"Users",sessions:"Active sessions",welcomeBusiness:"Welcome"},
+it:{eyebrow:"LA TUA PIATTAFORMA BUSINESS",headline:"Gestisci tutto.<br> In un solo posto.",intro:"Un unico pannello per ristoranti, negozi e aziende. Inizia con il tuo account e cresci passo dopo passo.",restaurant:"Menu digitali e ordini dal telefono.",website:"Presenza online per la tua attività.",shop:"Prodotti e vendite online.",crm:"Clienti e contatti in un unico posto.",welcome:"Bentornato",loginSub:"Accedi a SABI BUSINESS.",password:"Password",login:"Accedi",createAccount:"Non hai un account? Registra la tua attività",createTitle:"Crea l'account aziendale",registerSub:"La registrazione è gratuita in questa versione.",businessName:"Nome dell'attività",register:"Registra attività",haveAccount:"Hai già un account? Accedi",controlPanel:"PANNELLO DI CONTROLLO",logout:"Esci",businessProfile:"Profilo aziendale",language:"Lingua",save:"Salva modifiche",registeredBusinesses:"Attività registrate",created:"Creato",v1Notice:"La versione 1 include account, autenticazione e pannelli. QR, ordini e pagamenti saranno aggiunti in seguito.",admin:"Super Admin",business:"Pannello aziendale",businesses:"Attività",users:"Utenti",sessions:"Sessioni attive",welcomeBusiness:"Benvenuto"},
+de:{eyebrow:"DEINE BUSINESS-PLATTFORM",headline:"Alles verwalten.<br> An einem Ort.",intro:"Ein Dashboard für Restaurants, Shops und Unternehmen. Starte mit deinem Konto und wachse Schritt für Schritt.",restaurant:"Digitale Speisekarten und Bestellungen.",website:"Online-Auftritt für dein Unternehmen.",shop:"Produkte und Online-Verkäufe.",crm:"Kunden und Kontakte an einem Ort.",welcome:"Willkommen zurück",loginSub:"Bei SABI BUSINESS anmelden.",password:"Passwort",login:"Anmelden",createAccount:"Noch kein Konto? Unternehmen registrieren",createTitle:"Geschäftskonto erstellen",registerSub:"Die Registrierung ist in dieser Version kostenlos.",businessName:"Name des Unternehmens",register:"Unternehmen registrieren",haveAccount:"Du hast bereits ein Konto? Anmelden",controlPanel:"KONTROLLPANEL",logout:"Abmelden",businessProfile:"Unternehmensprofil",language:"Sprache",save:"Änderungen speichern",registeredBusinesses:"Registrierte Unternehmen",created:"Erstellt",v1Notice:"Version 1 enthält Konten, Anmeldung und Dashboards. QR, Bestellungen und Zahlungen folgen in späteren Versionen.",admin:"Super Admin",business:"Unternehmens-Dashboard",businesses:"Unternehmen",users:"Benutzer",sessions:"Aktive Sitzungen",welcomeBusiness:"Willkommen"}
+};
+let currentUser=null, dashboardData=null;
+const $=id=>document.getElementById(id);
+function lang(){return $("lang").value}
+function tr(k){return T[lang()][k]||T.sq[k]||k}
+function applyLanguage(){document.documentElement.lang=lang();document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.dataset.i18n;el.innerHTML=tr(k)});if(currentUser)renderDashboard()}
+async function api(path,options={}){const res=await fetch(path,{...options,credentials:"same-origin",headers:{"content-type":"application/json",...(options.headers||{})}});let data={};try{data=await res.json()}catch{}if(!res.ok)throw new Error(data.error||"Kërkesa dështoi.");return data}
+function showAuth(mode){$("loginBox").classList.toggle("hidden",mode!=="login");$("registerBox").classList.toggle("hidden",mode!=="register");$("authMsg").textContent=""}
+function showDashboard(on){$("landing").classList.toggle("hidden",on);$("dashboard").classList.toggle("hidden",!on)}
+function stat(label,value){return `<div class="stat"><strong>${Number(value)||0}</strong><span>${label}</span></div>`}
+function renderDashboard(){
+ if(!currentUser||!dashboardData)return;
+ $("dashTitle").textContent=currentUser.role==="admin"?tr("admin"):tr("business");
+ $("dashSub").textContent=currentUser.email+" · "+(currentUser.business_name||"");
+ if(currentUser.role==="admin"){
+  $("businessPanel").classList.add("hidden");$("adminPanel").classList.remove("hidden");
+  const s=dashboardData.stats||{};
+  $("stats").innerHTML=stat(tr("businesses"),s.businesses)+stat(tr("users"),s.users)+stat(tr("sessions"),s.active_sessions);
+  $("businessRows").innerHTML=(dashboardData.businesses||[]).map(b=>`<tr><td>${escapeHtml(b.email)}</td><td>${escapeHtml(b.business_name)}</td><td>${escapeHtml((b.created_at||"").slice(0,10))}</td></tr>`).join("")||`<tr><td colspan="3">Nuk ka biznese ende.</td></tr>`;
+ }else{
+  $("adminPanel").classList.add("hidden");$("businessPanel").classList.remove("hidden");
+  $("stats").innerHTML=stat("QR menus",0)+stat("Orders",0)+stat("Reservations",0);
+  $("profileName").value=currentUser.business_name||"";
+  $("profileLanguage").value=currentUser.language||"sq";
+ }
+}
+function escapeHtml(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+async function refresh(){
+ const me=await api("/api/me");currentUser=me.user;
+ if(!currentUser){showDashboard(false);return}
+ dashboardData=await api("/api/dashboard");showDashboard(true);renderDashboard();
+}
+$("lang").addEventListener("change",applyLanguage);
+$("showRegister").onclick=()=>showAuth("register");
+$("showLogin").onclick=()=>showAuth("login");
+$("loginBtn").onclick=async()=>{ $("authMsg").textContent="";try{await api("/api/login",{method:"POST",body:JSON.stringify({email:$("loginEmail").value,password:$("loginPassword").value})});await refresh()}catch(e){$("authMsg").textContent=e.message}};
+$("registerBtn").onclick=async()=>{ $("authMsg").textContent="";try{await api("/api/register",{method:"POST",body:JSON.stringify({businessName:$("businessName").value,email:$("registerEmail").value,password:$("registerPassword").value,language:lang()})});await refresh()}catch(e){$("authMsg").textContent=e.message}};
+$("logoutBtn").onclick=async()=>{await api("/api/logout",{method:"POST",body:"{}"});currentUser=null;dashboardData=null;showDashboard(false);showAuth("login")};
+$("saveProfile").onclick=async()=>{ $("profileMsg").textContent="";try{await api("/api/business/profile",{method:"PATCH",body:JSON.stringify({businessName:$("profileName").value,language:$("profileLanguage").value})});await refresh();$("profileMsg").textContent="U ruajt me sukses."}catch(e){$("profileMsg").textContent=e.message}};
+$("year").textContent=new Date().getFullYear();
+applyLanguage();refresh().catch(()=>showDashboard(false));
+</script>
+</body>
+</html>
